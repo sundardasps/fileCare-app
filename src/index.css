@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    @variants responsive {
+     
+        .scrollable {
+        max-height: 100%;
+        overflow-y: scroll;
+      }
+      
+      .scrollable::-webkit-scrollbar {
+        width: 0.5em;
+      }
+      
+      .scrollable::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      
+      .scrollable::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      
+    }
+    
+
+  }
