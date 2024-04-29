@@ -41,6 +41,8 @@ function Login() {
         setTimeout(() => {
           navigate("/confirm", { state: values.email });
         }, 4000);
+      }else{
+        toast.error(result.data.message);
       }
     },
   });

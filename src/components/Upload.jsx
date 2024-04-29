@@ -32,7 +32,6 @@ export default function Upload({ handleOpen }) {
     } else if (!file) {
       setError({ file: "Please select a file" });
     } else {
-      alert()
       const formData = new FormData();
       formData.append("file", file);
       formData.append("fileName", fileName);

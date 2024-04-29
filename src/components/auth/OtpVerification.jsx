@@ -104,7 +104,7 @@ function OtpVerification() {
           <h1 className="text-center pb-3 font-thin text-xl pl-5animate-pulse mr-2">
             OTP Verification
           </h1>
-
+          <p className="text-[0.7rem] text-center">{`A 5-digit pin has been sended to your email "${userEmail}".enter it below to continue. `}</p>
           <div className="flex gap-2  items-center justify-center mb-5  cursor-pointer">
             {Otp.map((digit, index) => (
               <input

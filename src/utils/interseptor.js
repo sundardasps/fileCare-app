@@ -13,6 +13,18 @@ interseptor.interceptors.request.use((request) => {
   return request;
 });
 
+interseptor.interceptors.response.use((response) => response ,(error)=> {
+  
+  if (error.response && error.response.status === 403){
+    toast.error("Oops,Something wrong!")
+    localStorage.removeItem("mobigicToken");
+    setTimeout(()=>{
+       window.location.reload()
+    },1000)
+}
+return Promise.reject(error);
+});
+
 
 
 

@@ -128,20 +128,7 @@ function Register() {
             onBlur={handleBlur}
             variant="standard"
             label="confirmPassword"
-            type={passTwoShow ? "text" : "password"}
-            icon={
-              passTwoShow ? (
-                <EyeIcon
-                  className="cursor-pointer"
-                  onClick={() => handleShowTwo()}
-                />
-              ) : (
-                <EyeSlashIcon
-                  className="cursor-pointer"
-                  onClick={() => handleShowTwo()}
-                />
-              )
-            }
+            type={"password"}
           />
           {errors.confirmPassword && touched.confirmPassword && (
             <span className="text-xs text-red-400">
